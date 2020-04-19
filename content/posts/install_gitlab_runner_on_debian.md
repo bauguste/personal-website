@@ -1,10 +1,7 @@
 +++ 
-draft = false
 date = 2020-04-19T10:00:17+02:00
 title = "Install GitLab Runner on Debian"
-description = ""
-slug = "install_gitlab_runner_on_debian" 
-tags = [ "debian", "gitlab", "runner" ]
+tags = [ "debian", "gitlab", "runner", "buster" ]
 categories = [ "gitlab" ]
 +++
 
@@ -12,17 +9,42 @@ categories = [ "gitlab" ]
 
 *  Add GitLab’s official repository:
 
-{{< highlight shell >}}
+```bash
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-{{< /highlight >}}
+```
 
 * Install the latest version of GitLab Runner
 
-{{< highlight shell >}}
+```bash
 sudo apt-get install gitlab-runner
-{{< /highlight >}}
+```
 
 * [Register the Runner](https://docs.gitlab.com/runner/register/index.html)
+
+## Errors on Debian 10 Buster
+
+Runner executor in shell mode
+
+```bash
+ Running with gitlab-runner 12.9.0 (4c96e5ad)
+   on xxx
+Preparing the "shell" executor
+00:00
+ Using Shell executor...
+Preparing environment
+00:00
+ Running on xxx..
+Uploading artifacts for failed job
+00:00
+ bash: line 98: cd: /home/gitlab-runner/builds/ugz-uvsS/0/bauguste/docker-multiarch-builder: No such file or directory
+ ERROR: Job failed: exit status 1
+ ```
+
+To solve this error, delete the `.bash_logout` file for the **gitlab-runner** user
+
+```bash 
+rm /home/gitlab-runner/.bash_logout 
+```
 
 ## References
 

@@ -8,6 +8,9 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 googleanalytics = "UA-163947220-1"
 disqusShortname = "bauguste"
@@ -63,6 +66,9 @@ disqusShortname = "bauguste"
     
     [languages.fr]
         languagename = "Français"
+    
+    [languages.fr.params]
+        info = "Software Engineer et DevOps"
 
 [[menu.main]]
     name = "Blog"
