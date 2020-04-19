@@ -12,13 +12,15 @@ categories = [ "gitlab" ]
 
 * Ajout du repository officiel GitLab
 
-```bash
+test
+
+```shell
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
 ```
 
 * Installation de la dernière version de GitLab Runner
 
-```bash
+```shell
 sudo apt-get install gitlab-runner
 ```
 
