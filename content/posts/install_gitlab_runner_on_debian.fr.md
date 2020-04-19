@@ -10,19 +10,19 @@ categories = [ "gitlab" ]
 
 ## Installation GitLab Runner sur Debian
 
-1. Ajout du repository officiel GitLab
+### Ajout du repository officiel GitLab
 
 ```bash
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
 ```
 
-2. Installation de la dernière version de GitLab Runner
+### Installation de la dernière version de GitLab Runner
 
 ```bash
 sudo apt-get install gitlab-runner
 ```
 
-3. [Enregistrer le Runner](https://docs.gitlab.com/runner/register/index.html)
+### [Enregistrer le Runner](https://docs.gitlab.com/runner/register/index.html)
 
 ## Références
 
