@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2020-04-19T10:00:17+02:00
 title = "Installation GitLab Runner sur Debian"
 description = ""
