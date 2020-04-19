@@ -12,15 +12,15 @@ categories = [ "gitlab" ]
 
 *  Add GitLab’s official repository:
 
-```shell
+{{< highlight shell >}}
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-```
+{{< /highlight >}}
 
 * Install the latest version of GitLab Runner
 
-```shell
+{{< highlight shell >}}
 sudo apt-get install gitlab-runner
-```
+{{< /highlight >}}
 
 * [Register the Runner](https://docs.gitlab.com/runner/register/index.html)
 
