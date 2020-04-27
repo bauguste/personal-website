@@ -1,10 +1,10 @@
-+++
-draft = true
-date = 2020-04-19T10:00:17+02:00
-title = "Installation GitLab Runner sur Debian"
-tags = [ "debian", "gitlab", "runner", "buster" ]
-categories = [ "gitlab" ]
-+++
+---
+draft: true
+date: 2020-04-19T10:00:17+02:00
+title: "Installation GitLab Runner sur Debian"
+tags: [ "debian", "gitlab", "runner", "buster" ]
+categories: [ "gitlab" ]
+---
 
 ## Installation GitLab Runner sur Debian
 
